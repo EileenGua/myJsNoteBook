@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    //什么是json：存数据的
+    <script>
+        var a=12;
+        var b="123";
+        var c=5;
+
+        var json={a:12,b:5,c:'abc'};
+        json.b++; //7
+        var arr=[12,5,7]
+        arr[0];   //12
+
+        alert(json['a']);   //json下标是字符串
+        alert(arr[0]);
+
+        alert(json.length);//报错，json没有length，undefined
+        //循环
+        for (var i in arr)
+        {
+        }
+        for (var i in json){
+            //这里的i是abc
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

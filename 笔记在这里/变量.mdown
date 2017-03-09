@@ -1,0 +1,23 @@
+# 变量
+今天主要学习了关于js变量，配合之前的学习笔记，还来不及整理，先行上传部分
+
+这是一门松散类型的语言，有基本类型和引用类型
+
+* 基本类型
+基本类型：`Undefined/Null/Boolean/Number/String/Symbol`
+其中'undefined':一个是真的没有定义，还有一种可能是定义了但是没有给值
+
+* 引用类型
+`Object/Array/Function/Date/RegExp…`
+
+##类型判断
+
+` typeof `和` instanceof `不靠谱
+
+有人写了一个is函数
+`Function is(obj,type){return Object.prototype.toString.call(obj).slice(8,-1)===type;}`
+
+
+用这个`is` 函数来判断  兼容性不错（没试过，也不知道为什么）
+`is(null,'Null') //true`
+
